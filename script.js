@@ -1,26 +1,35 @@
 function addTask(){
 
-    let input = document.getElementById("taskInput");
-    let task = input.value;
+let input = document.getElementById("taskInput");
+let taskText = input.value;
 
-    if(task === ""){
-        alert("Tugas tidak boleh kosong");
-        return;
-    }
+if(taskText === ""){
+alert("Masukkan tugas dulu!");
+return;
+}
 
-    let li = document.createElement("li");
-    li.textContent = task;
+let li = document.createElement("li");
 
-    let btn = document.createElement("button");
-    btn.textContent = "Hapus";
+let span = document.createElement("span");
+span.textContent = taskText;
 
-    btn.onclick = function(){
-        li.remove();
-    }
+span.onclick = function(){
+span.classList.toggle("completed");
+}
 
-    li.appendChild(btn);
+let del = document.createElement("button");
+del.textContent = "🗑";
+del.className="delete";
 
-    document.getElementById("taskList").appendChild(li);
+del.onclick=function(){
+li.remove();
+}
 
-    input.value = "";
+li.appendChild(span);
+li.appendChild(del);
+
+document.getElementById("taskList").appendChild(li);
+
+input.value="";
+
 }
