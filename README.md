@@ -1,2 +1,2 @@
-# todo-list
+# to-do-list
 membuat todo list
