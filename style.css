@@ -1,6 +1,15 @@
 body{
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    background: linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
+    );
     height:100vh;
     display:flex;
     justify-content:center;
@@ -10,14 +19,24 @@ body{
 .container{
     background:white;
     padding:30px;
-    width:350px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    width:360px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
 }
 
 h1{
     text-align:center;
-    color:#333;
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        purple
+    );
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .input-area{
@@ -28,22 +47,30 @@ h1{
 input{
     flex:1;
     padding:10px;
-    border-radius:8px;
-    border:1px solid #ccc;
+    border-radius:10px;
+    border:2px solid #ddd;
 }
 
 button{
     margin-left:10px;
     padding:10px 15px;
     border:none;
-    background:#2575fc;
+    background: linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        purple
+    );
     color:white;
-    border-radius:8px;
+    border-radius:10px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#1b5edb;
+    opacity:0.8;
 }
 
 ul{
@@ -53,9 +80,15 @@ ul{
 }
 
 li{
-    background:#f4f4f4;
+    background: linear-gradient(
+        90deg,
+        #ff9a9e,
+        #fad0c4,
+        #fbc2eb,
+        #a6c1ee
+    );
     padding:10px;
-    border-radius:8px;
+    border-radius:10px;
     margin-top:10px;
     display:flex;
     justify-content:space-between;
@@ -64,14 +97,14 @@ li{
 
 .completed{
     text-decoration: line-through;
-    color:gray;
+    color:#555;
 }
 
 .delete{
-    background:red;
+    background:#ff4d4d;
     color:white;
     border:none;
-    padding:5px 8px;
+    padding:5px 10px;
     border-radius:5px;
     cursor:pointer;
 }
